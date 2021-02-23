@@ -1,13 +1,13 @@
-header.experience-bar {
+header.experienceBar {
   align-items: center;
   display: flex;
 }
 
-header.experience-bar span {
+header.experienceBar span {
   font-size: 1.5rem;
 }
 
-header.experience-bar>div {
+header.experienceBar>div {
   background-color: var(--gray-line);
   border-radius: 4px;
   flex: 1;
@@ -15,12 +15,12 @@ header.experience-bar>div {
   margin: 0 1.5rem;
   position: relative;
 }
-header.experience-bar>div>div {
+header.experienceBar>div>div {
   background-color: var(--green);
   border-radius: 4px;
   height: 4px;
 }
-header.experience-bar>div span.current-experience {
+header.experienceBar>div span.currentExperience {
   position: absolute;
   top: 12px;
   transform: translateX(-50%);
