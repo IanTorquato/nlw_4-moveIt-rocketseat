@@ -12,6 +12,7 @@ div.countdownContainer>div {
 	border-radius: 5px;
 	box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 	display: flex;
+	flex: 1;
 	font-size: 8.5rem;
 	justify-content: space-evenly;
 	text-align: center;
