@@ -48,12 +48,3 @@ a {
     font-size: 87.5%;
   }
 }
-
-div.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0 auto;
-  max-width: 992px;
-  padding: 2.5rem 2rem;
-}
