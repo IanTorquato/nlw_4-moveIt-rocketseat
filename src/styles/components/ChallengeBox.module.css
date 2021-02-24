@@ -11,6 +11,70 @@ div.challengeBoxContainer {
 	text-align: center;
 }
 
+div.challengeActive {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+div.challengeActive header {
+	border-bottom: 1px solid var(--gray-line);
+	color: var(--blue);
+	font-size: 1.25rem;
+	font-weight: 600;
+	padding: 0 2rem 1.5rem;
+}
+
+div.challengeActive main {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+}
+
+div.challengeActive main strong {
+	color: var(--title);
+	font-size: 2rem;
+	font-weight: 600;
+	margin: 1.5rem 0 1rem;
+}
+
+div.challengeActive main p {
+	line-height: 1.5;
+}
+
+div.challengeActive footer {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+div.challengeActive footer button {
+	align-items: center;
+	border: 0;
+	border-radius: 5px;
+	color: var(--white);
+	display: flex;
+	font-size: 1rem;
+	font-weight: 600;
+	height: 3rem;
+	justify-content: center;
+	transition: filter 0.2s;
+}
+
+div.challengeActive footer button:hover {
+	filter: brightness(0.9);
+}
+
+div.challengeActive footer button.challengeSucceededButton {
+	background-color: var(--green)
+}
+
+div.challengeActive footer button.challengeFailedButton {
+	background-color: var(--red)
+}
+
 div.challengeNotActive {
 	align-items: center;
 	display: flex;
