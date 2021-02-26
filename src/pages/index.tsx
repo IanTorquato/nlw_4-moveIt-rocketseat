@@ -18,7 +18,6 @@ interface HomeProps {
 }
 
 function Home({ level, currentExperience, challengeCompleted }: HomeProps) {
-
 	return (
 		<ChallengeProvider
 			level={level}
@@ -51,7 +50,7 @@ function Home({ level, currentExperience, challengeCompleted }: HomeProps) {
 }
 
 const getServerSideProps: GetServerSideProps = async (contexts) => {
-	const { level, currentExperience, challengeCompleted } = contexts.req.cookies
+	const { level = 1, currentExperience = 0, challengeCompleted = 0 } = contexts.req.cookies
 
 	return {
 		props: {
