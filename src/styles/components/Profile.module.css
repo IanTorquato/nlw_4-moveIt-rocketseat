@@ -1,29 +1,29 @@
 div.profileContainer {
-	align-items: center;
-	display: flex;
+  align-items: center;
+  display: flex;
 }
 
 div.profileContainer>img {
-	border-radius: 50%;
-	height: 5.5rem;
-	width: 5.5rem;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
 }
 
 div.profileContainer div {
-	margin-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 div.profileContainer div strong {
-	color: var(--title);
-	font-size: 1.5rem;
-	font-weight: 600;
+  color: var(--title);
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 div.profileContainer div p {
-	font-size: 1rem;
-	margin-top: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 div.profileContainer div p img {
-	margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }

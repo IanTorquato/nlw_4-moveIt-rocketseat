@@ -1,27 +1,27 @@
 header.experienceBar {
-	align-items: center;
-	display: flex;
+  align-items: center;
+  display: flex;
 }
 
 header.experienceBar span {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 header.experienceBar>div {
-	background-color: var(--gray-line);
-	border-radius: 4px;
-	flex: 1;
-	height: 4px;
-	margin: 0 1.5rem;
-	position: relative;
+  background-color: var(--gray-line);
+  border-radius: 4px;
+  flex: 1;
+  height: 4px;
+  margin: 0 1.5rem;
+  position: relative;
 }
 header.experienceBar>div>div {
-	background-color: var(--green);
-	border-radius: 4px;
-	height: 4px;
+  background-color: var(--green);
+  border-radius: 4px;
+  height: 4px;
 }
 header.experienceBar>div span.currentExperience {
-	position: absolute;
-	top: 12px;
-	transform: translateX(-50%);
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
 }

@@ -12,53 +12,53 @@ import { CountdownProvider } from '../contexts/Countdown'
 import styles from '../styles/pages/Home.module.css'
 
 interface HomeProps {
-	level: number
-	currentExperience: number
-	challengeCompleted: number
+  level: number
+  currentExperience: number
+  challengeCompleted: number
 }
 
 function Home({ level, currentExperience, challengeCompleted }: HomeProps) {
-	return (
-		<ChallengeProvider
-			level={level}
-			currentExperience={currentExperience}
-			challengeCompleted={challengeCompleted}
-		>
-			<div className={styles.container}>
-				<Head>
-					<title>Início | move.it</title>
-				</Head>
+  return (
+    <ChallengeProvider
+      level={level}
+      currentExperience={currentExperience}
+      challengeCompleted={challengeCompleted}
+    >
+      <div className={styles.container}>
+        <Head>
+          <title>Início | move.it</title>
+        </Head>
 
-				<ExperienceBar />
+        <ExperienceBar />
 
-				<CountdownProvider>
-					<section>
-						<div>
-							<Profile />
-							<CompletedChallenges />
-							<Countdown />
-						</div>
+        <CountdownProvider>
+          <section>
+            <div>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
 
-						<div>
-							<ChallengeBox />
-						</div>
-					</section>
-				</CountdownProvider>
-			</div>
-		</ChallengeProvider>
-	)
+            <div>
+              <ChallengeBox />
+            </div>
+          </section>
+        </CountdownProvider>
+      </div>
+    </ChallengeProvider>
+  )
 }
 
 const getServerSideProps: GetServerSideProps = async (contexts) => {
-	const { level = 1, currentExperience = 0, challengeCompleted = 0 } = contexts.req.cookies
+  const { level = 1, currentExperience = 0, challengeCompleted = 0 } = contexts.req.cookies
 
-	return {
-		props: {
-			level: Number(level),
-			currentExperience: Number(currentExperience),
-			challengeCompleted: Number(challengeCompleted)
-		}
-	}
+  return {
+    props: {
+      level: Number(level),
+      currentExperience: Number(currentExperience),
+      challengeCompleted: Number(challengeCompleted)
+    }
+  }
 }
 
 export { getServerSideProps }

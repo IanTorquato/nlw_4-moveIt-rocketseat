@@ -1,17 +1,17 @@
 div.completedChallengesContainer {
-	align-items: center;
-	border-bottom: 1px solid #d7d8da;
-	display: flex;
-	font-weight: 500;
-	justify-content: space-between;
-	margin: 3.5rem 0;
-	padding-bottom: 1rem;
+  align-items: center;
+  border-bottom: 1px solid #d7d8da;
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  margin: 3.5rem 0;
+  padding-bottom: 1rem;
 }
 
 div.completedChallengesContainer span:first-child {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 div.completedChallengesContainer span:last-child {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
